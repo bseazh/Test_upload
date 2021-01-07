@@ -3,6 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("hello,world")
-	fmt.Print("123")
+	var Map map[int]bool
+	Map = make(map[int]bool)
+	Map[2] = true
+	ok, _ := Map[1]
+	fmt.Println(ok)
 }
